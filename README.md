@@ -17,7 +17,8 @@ const ATM = (function (){
 	return {
 		deposit: function (n) {
 			depositPrivate(n);
-			console.log(`Hey! Thanks for depositing ${n} in our bank.\n` +
+			console.log(
+				`Hey! Thanks for depositing ${n} in our bank.\n` +
 				`The deposit has been successfully processed.`);
 		},
 		
@@ -42,8 +43,8 @@ const ATM = (() => {
 		deposit: n => {
 			depositPrivate(n);
 			console.log(
-					`Hey! Thanks for depositing ${n} in our bank.\n` +
-					`The deposit has been successfully processed.`);
+				`Hey! Thanks for depositing ${n} in our bank.\n` +
+				`The deposit has been successfully processed.`);
 		},
 		
 		show: () => {
@@ -69,8 +70,8 @@ module.exports = {
 	deposit: n => {
 		depositPrivate(n);
 		console.log(
-				`Hey! Thanks for depositing ${n} in our bank.\n` +
-				`The deposit has been successfully processed.`);
+			`Hey! Thanks for depositing ${n} in our bank.\n` +
+			`The deposit has been successfully processed.`);
 	},
 	
 	show: () => {
