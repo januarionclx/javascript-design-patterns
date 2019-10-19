@@ -52,3 +52,28 @@ const ATM = (() => {
 	}
 })()
 ```
+
+### Module Pattern using file encapsulation (using NodeJS module.exports)
+
+```javascript
+let credit = 0;
+
+const depositPrivate = n => {
+	credit += n;
+}
+
+//nodeJS
+module.exports = {
+	deposit: n => {
+		depositPrivate(n);
+		console.log(
+				`Hey! Thanks for depositing ${n} in our bank.\n` +
+				`The deposit has been successfully processed.`);
+	},
+	
+	show: () => {
+		console.log(`Your credit: ${credit}`);
+	}
+}
+````
+
