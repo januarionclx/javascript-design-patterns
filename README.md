@@ -1,0 +1,54 @@
+# Javascript Design Patterns
+
+## Introduction
+
+I'll be adding more and more patterns over time which you can use as a reference for your own JavaScript apps.
+
+### Module Patterns (using IIFE's)
+
+```javascript
+const ATM = (function (){
+	let credit = 0;
+
+	function depositPrivate(n) {
+		credit += n;
+	}
+
+	return {
+		deposit: function (n) {
+			depositPrivate(n);
+			console.log(`Hey! Thanks for depositing ${n} in our bank.\n` +
+				`The deposit has been successfully processed.`);
+		},
+		
+		show: function () {
+			console.log(`Your credit: ${credit}`);
+		}
+	}
+})()
+```
+
+### Module Pattern (using Arrow functions)
+
+```javascript
+const ATM = (() => {
+	let credit = 0;
+
+	const depositPrivate = n => {
+		credit += n;
+	}
+
+	return {
+		deposit: n => {
+			depositPrivate(n);
+			console.log(
+					`Hey! Thanks for depositing ${n} in our bank.\n` +
+					`The deposit has been successfully processed.`);
+		},
+		
+		show: () => {
+			console.log(`Your credit: ${credit}`);
+		}
+	}
+})()
+```
