@@ -4,7 +4,7 @@
 
 I'll be adding more and more patterns over time which you can use as a reference for your own JavaScript apps.
 
-### Module Patterns (using IIFE's)
+### Module Pattern (using IIFE's)
 
 ```javascript
 const ATM = (function (){
