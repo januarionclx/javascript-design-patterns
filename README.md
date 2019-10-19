@@ -55,6 +55,8 @@ const ATM = (() => {
 
 ### Module Pattern using file encapsulation (using NodeJS module.exports)
 
+// ATM.js
+
 ```javascript
 let credit = 0;
 
@@ -77,3 +79,13 @@ module.exports = {
 }
 ````
 
+// index.js
+
+```javascript
+const ATM = require('./ATM.js');
+
+console.log(ATM) // object
+ATM.show()     //? 0
+ATM.deposit(5)
+ATM.show()     //? 5
+```
