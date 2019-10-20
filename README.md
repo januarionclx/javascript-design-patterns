@@ -166,7 +166,7 @@ And here's the implementation example:
 
 ```javascript
 // Declare our Subject
-const Subject = new EventHandler();
+const subject = new EventHandler();
 
 // Declare signature functions for our Observers (events)
 const callback = function(data){ 
@@ -177,16 +177,16 @@ const callback2 = function(){
 }
 
 // Add Observers (events) to our Observer List.
-event.on('message', callback)
-event.on('message', callback2)
+subject.on('message', callback)
+subject.on('message', callback2)
 
 
 // Emit the events
-event.emit('message');
+subject.emit('message');
 
 // Remove an Observer from the Observer List.
-event.off('message', callback);
+subject.off('message', callback);
 
 // Emit the event again to check if the previous Observer has been succesfuly removed.
-event.emit('message')
+subject.emit('message')
 ```
