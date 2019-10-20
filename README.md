@@ -2,6 +2,13 @@
 
 ## Introduction
 
+>Design patterns are typical solutions to common problems in software design. 
+>Each pattern is like a blueprint that you can customize to solve a particular design problem in your code.
+
+>Patterns are a toolkit of solutions to common problems in software design. 
+>They define a common language that helps your team communicate more efficiently.
+@refactoring.guru
+
 I'll be adding more and more patterns over time which you can use as a reference for your own JavaScript apps.
 
 ### Module Pattern (using IIFE's)
