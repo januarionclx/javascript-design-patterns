@@ -95,11 +95,11 @@ ATM.show()     //? 5
 
 Instead of prividing an incomplete example of the Observer Pattern, I decided that it would be more benefitial to provide a fully working example of an event handler class (similar to [NodeJS's events.js](https://github.com/Gozala/events), just simpler for the sake of your own understanding and the objective of this guide).
 
-In this example, the class EventHandler would be what they often refer to the *Subject Class* (which we'll use later to define our *Subject*).
+In this example, the class EventHandler would be what they often refer to the **Subject Class** (which we'll use later to define our **Subject**).
 
-It cointains the list of the *Observers* (events in this example) and methods to facilitate adding/removing Observers (again, events) to the list.
+It cointains the list of the **Observers** (events in this example) and methods to facilitate adding/removing Observers (again, events) to the list.
 
-The *Observers* (events) have a function signature that will be invoked when the *Subject* changes (i.e. when an event occurs / has been emited.)
+The **Observers** (events) have a function signature that will be invoked when the **Subject** changes (i.e. when an event occurs / has been emited.)
 
 Here's the full class providing examples for:
 
