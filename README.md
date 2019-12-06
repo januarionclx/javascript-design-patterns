@@ -11,6 +11,8 @@
 
 I'll be adding more and more patterns over time which you can use as a reference for your own JavaScript apps.
 
+Special shoutouts to Alex (n8bit#0653 @Discord) and Nate (n8bit#0653 @Discord) both from [nengi's Discord server](https://discord.gg/7kAa7NJ) for joining the discussions about design patterns and answering my dumb questions.
+
 ### Module Pattern (using IIFE's)
 
 ```javascript
